@@ -1,0 +1,61 @@
+@import "../variables/_colors";
+
+$defaultBgColor: $colorMonza;
+$defaultHoverBgColor: $colorAbbey;
+$defaultTextColor: $colorWhite;
+$secondaryBgColor: $colorAbbey;
+$secondaryHoverBgColor: $colorMonza;
+$disabledBgColor: $colorMercury;
+
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 13px 30px;
+  border: none;
+  border-radius: 3px;
+  min-width: 130px;
+  background-color: $defaultBgColor;
+  transition: background-color 250ms ease;
+  color: $defaultTextColor;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: 'opensans';
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: $defaultHoverBgColor;
+}
+
+.button[disabled] {
+  cursor: default;
+  background-color: $disabledBgColor;
+}
+
+.button.rounded {
+  border-radius: 100px;
+  text-transform: none;
+  font-weight: 600;
+}
+
+.button.has-icon,
+.button.has-icon {
+  position: relative;
+  padding: 11px 36px;
+}
+
+.button.secondary {
+  background-color: $secondaryBgColor;
+}
+
+.button.secondary:hover {
+  background-color: $secondaryHoverBgColor;
+}
+
+.button.secondary[disabled],
+.button.upload-button[disabled] {
+  background-color: $disabledBgColor;
+}

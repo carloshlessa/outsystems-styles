@@ -1,0 +1,20 @@
+@import "../typeography/typeography.scss";
+@import "../variables/variables.scss";
+
+body {
+  font-family: $primaryFontFamily;
+  font-weight: $primaryFontRegular;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: $colorAbbey;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 20px 0;
+}
+
+ul {
+  padding: 0 0 0 20px;
+}

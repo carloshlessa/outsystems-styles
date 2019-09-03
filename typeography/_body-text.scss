@@ -1,0 +1,34 @@
+/***
+  Default body text sizes
+*/
+
+$xxl-font-size: 2.2rem;
+$xl-font-size: 1.9rem;
+$lg-font-size: 1.8rem;
+$md-font-size: 1.7rem;
+$sm-font-size: 1.5rem;
+$xs-font-size: 1.3rem;
+
+.text-xxl {
+  font-size: $xxl-font-size;
+}
+
+.text-xl {
+  font-size: $xl-font-size;
+}
+
+.text-lg {
+  font-size: $lg-font-size;
+}
+
+.text-md {
+  font-size: $md-font-size;
+}
+
+.text-sm {
+  font-size: $sm-font-size;
+}
+
+.text-xs {
+  font-size: $xs-font-size;
+}
