@@ -1,12 +1,26 @@
+table {
+  border-collapse: collapse;
+  border: solid #ababab 1px;
+  margin: 10px;
+}
+
 th {
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0px 10px 5px 10px;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 0px 10px 5px 10px;
 }
 
 td {
-    font-size: 1.2rem;
-    padding: 5px 10px;
-    height: auto;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  height: auto;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+tr .TableRecords_Label {
+  display: none;
 }
