@@ -1,0 +1,327 @@
+:root {
+  --color-primary: #DC3023 !important;
+  --color-primary-hover: #DC3023 !important;
+  --color-secondary: #DC3023 !important;
+}
+
+html {
+  font-size: 62.5% !important; /* allows us to use 1rem = 10px, 1.6rem = 16px etc */
+}
+
+body {
+  font-family: "opensans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+}
+
+/* Pagination */
+span.ListNavigation_CurrentPageNumber {
+  background: #f2f8ff !important;
+  color: #066ce8 !important;
+}
+
+/* Form elements */
+
+.SubsectionTitle {
+  color: #000000;
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.SubsectionQuestion {
+  font-size: 1.6rem;
+}
+
+.SubsectionMinorText {
+  font-size: 1.2rem;
+  color: #727779;
+  margin-bottom: 5px;
+  margin-top: 2px;
+
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+label.MandatoryLabel {
+  color: #000000 !important;
+}
+
+/* Radio/checkbox input styles */
+
+.Section input[type="radio"] {
+  background-color: #ffffff !important;
+}
+
+.radio-button:checked:before {
+  border: 6px solid #066ce8;
+  height: 10px;
+  width: 10px;
+}
+
+.checkbox:checked:before {
+  background-color: #066ce8;
+  border-color: #066ce8 !important;
+}
+
+/* Application title */
+.application-name span {
+  font-size: 2.5rem;
+}
+
+/* Reset input focus colour */
+input:focus[type="text"],
+select:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid #4d90fe !important;
+  -webkit-box-shadow: 0px 0px 5px #4d90fe;
+  box-shadow: 0px 0px 5px #4d90fe;
+}
+
+input[type="text"][disabled],
+select[disabled],
+textarea[disabled] {
+  background-color: #f6f6f6;
+}
+
+.Btn[disabled] {
+  background-color: #cacaca;
+  cursor: default;
+}
+
+/* Get correct cursor on inputs */
+input[type="checkbox"], input[type="radio"] {
+  cursor: pointer !important;
+}
+
+/* Link colours */
+.main-content a, .main-content a:hover {
+  color: #066ce8 !important;
+  text-decoration: underline;
+}
+
+.EditableTable tfoot td a, .EditableTable tfoot td a:hover {
+  text-decoration: none;
+}
+
+/* Section */
+.Section {
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 3px;
+  box-shadow: 0 3px 2px 0 rgba(0,0,0,.1);
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+/* Banner */
+.Banner {
+  position: relative;
+  width: 100%;
+  border-radius: 3px;
+  padding: 12px;
+}
+
+.Banner.Banner-warning {
+  background-color: #ffc000;
+  color: #45494c;
+}
+
+.Banner.Banner-info {
+  background-color: #066ce8;
+  color: #ffffff;
+}
+
+.Banner.Banner-error {
+  background-color: #cc0011;
+  color: #ffffff;
+}
+
+.Banner.Banner-success {
+  background-color: #00aa6e;
+  color: #ffffff;
+}
+
+.Banner.Banner-subtle {
+  background-color: #f3f3f3;
+  color: #45494c;
+}
+
+.System-info-banner{
+  border-radius: 0px;
+  z-index: 9001;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
+
+/* UC buttons */
+.Btn {
+ display: inline-block;
+ position: relative;
+ text-align: center;
+ vertical-align: middle;
+ padding: 1.25em 2em;
+ border: 1px solid transparent;
+ font-weight: 700;
+ -webkit-appearance: none;
+ line-height: 0.5;
+ cursor: pointer;
+ background-color: #c01;
+ color: #fff;
+ border-radius: .1875rem;
+ font-size: 1.2rem;
+}
+
+.Btn:hover {
+  background-color: #45494c !important;
+  color: #fff;
+
+}
+
+.Btn.Secondary {
+  background-color: #45494c;
+  color: #fff;
+  border-radius: 6.25rem;
+  font-weight: 500;
+  text-transform: none;
+  padding: 1.1em 1.8em;
+}
+
+.Btn.Secondary:hover {
+  background-color: #c01 !important;
+  color: #fff;
+}
+
+.Btn.Link {
+  display: inline-block;
+  padding: 0 20px;
+  text-decoration: underline;
+  cursor: pointer;
+  line-height: inherit;
+  color: #066ce8;
+  background-color: transparent;
+  width: auto;
+  font-weight: 400;
+}
+
+.Btn.Link:hover {
+  background-color: transparent !important;
+}
+
+.Btn:focus {
+  outline: none;
+  border: 1px solid #4d90fe !important;
+  -webkit-box-shadow: 0px 0px 5px #4d90fe;
+  box-shadow: 0px 0px 5px #4d90fe;
+}
+
+/* Sidebar navigation */
+
+.navigation-top {
+  color: #ffffff;
+}
+/*
+.Menu_TopMenu:hover.Menu_TopMenuActive > div .Menu_DropDownArrow:before,
+.Menu_TopMenu:hover.Menu_TopMenuActive > div .Menu_DropDownArrow:after,
+.Menu_TopMenuActive > div .Menu_DropDownArrow:before,
+.Menu_TopMenuActive > div .Menu_DropDownArrow:after,
+.Menu_TopMenu:hover > div .Menu_DropDownArrow:before,
+.Menu_TopMenu:hover > div .Menu_DropDownArrow:after {
+  background-color: #ffffff !important;
+}
+*/
+
+.Menu_DropDownArrow{
+  margin-right: 1rem
+}
+.Menu_DropDownButton.open .Menu_TopMenu{
+  Background-color: #fff;
+
+}
+
+.Menu_DropDownArrow:after,
+.Menu_DropDownArrow:before{
+  background-color: #45494c !important;
+}
+
+.navigation .Menu_TopMenus,
+.SubMenuWrapper {
+  height: auto !important;
+}
+
+.Menu-link:hover, .Submenu-link:hover {
+  color: #ffffff !important;
+}
+
+.Menu-link {
+  margin-bottom: 10px !important;
+  display: block !important;
+  height: auto !important;
+}
+
+.Submenu-link {
+  margin-left: 20px;
+  padding-right: 0 !important;
+}
+
+.Application_Menu {
+  height: auto !important;
+}
+
+.pika-table td .pika-button {
+  /* fixes some weird flex bug in early Edge */
+  margin: 0 3px;
+}
+
+.pika-table th {
+  /* fixes some weird flex bug in early Edge */
+  display: inline-block;
+}
+
+/*reusable styles for the core application admin web blocks these can be used elsewhere if the same form style is needed*/
+.Widget .Label{
+  width: 170px;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  font-size: 1.4rem;
+}
+
+.Widget .Label > label{
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.Widget .InputLabelWrapper{
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  min-height: 40px
+}
+.Widget .Label span{
+  line-height: 1.5;
+}
+.Widget .InputContainer{
+  padding-left: 10px;
+  margin-left: 0px;
+}
+/* Modal */
+.modalOpen{
+  overflow-y: hidden;
+}
+
+/* sort links for table headers */
+
+a.Sortable {
+  text-decoration: none !important;
+  color: #5c656d !important;
+}
+
+a.Sortable:hover, a.Sorted {
+  color: #DC3023 !important;
+}
